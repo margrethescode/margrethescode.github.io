@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Blog"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Blog"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Blog"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Blog"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/BlogPosting"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/BlogPosting"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/BlogPosting"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/BlogPosting"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Data Island</title>
+<title>Geospatial Visualisations</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A blog about data science, programming and how to communicata with data">
+<meta name="description" content="Theory about mapping data">
 <link rel="shortcut icon" href="http://margrethescode.github.io/" type="">
 <meta name="author" content="Margrethe">
 <meta name="copyright" content="Margrethe">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@MargretheB" />
 <meta property="og:site_name" content="Data Island" />
-<meta property="og:title" content="Data Island" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://margrethescode.github.io" />
-<meta name="twitter:url" content="http://margrethescode.github.io" />
-<meta itemprop="name" content="Data Island" />
-<meta itemprop="url" content="http://margrethescode.github.io"/>
-<meta property="og:description" content="A blog about data science, programming and how to communicata with data" />
-<meta name="twitter:description" content="A blog about data science, programming and how to communicata with data" />
-<meta itemprop="description" content="A blog about data science, programming and how to communicata with data" />
+
+<meta property="og:title" content="Geospatial visualisations" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://margrethescode.github.io/geospatial_visualisations.html" />
+<meta name="twitter:title" content="Geospatial visualisations" />
+<meta name="twitter:url" content="http://margrethescode.github.io/geospatial_visualisations.html" />
+<meta itemprop="url" content="http://margrethescode.github.io/geospatial_visualisations.html" />
+<meta property="og:description" content="Theory about mapping data" />
+<meta name="twitter:description" content="Theory about mapping data" />
+<meta property="og:article:published_time" content="2019-06-04" />
+<meta property="og:article:author" content="Margrethe" >
+<meta property="og:article:tag" content="maps tableau">
+
 <link href="http://margrethescode.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Data Island ATOM Feed"/>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -60,15 +64,36 @@
 
     <div class="uk-grid" data-uk-grid-margin>
         
-<div class="uk-width-medium-4-5">
+<div class="mg-container-social uk-width-medium-1-10 uk-hidden-small">
 
+    <div class="uk-panel" id="mg-panel-social">
+        <ul class="uk-nav uk-nav-side">
+            <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://margrethescode.github.io/geospatial_visualisations.html" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" taget="_blank" class="uk-button"><i class="uk-icon-facebook-square"></i> Share</a>
+            </li>
+            <li>
+            <a href="https://twitter.com/intent/tweet?text=Geospatial%20Visualisations&url=http://margrethescode.github.io/geospatial_visualisations.html&via=MargretheB" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="uk-button" target="_blank"><i class="uk-icon-twitter"></i> Tweet</a>
+            </li>
+            <li>
+            <a href="https://plus.google.com/share?url=http://margrethescode.github.io/geospatial_visualisations.html" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" class="uk-button"><i class="uk-icon-google-plus-square"></i> Share</a>
+            </li>
+        </ul>
+    </div>
 
-            <article class="uk-article" itemtype="http://schema.org/BlogPosting" itemscope="itemscope" itemprop="blogPost">
-                <a href="http://margrethescode.github.io/geospatial_visualisations.html" class="uk-article-title uk-link-muted" itemprop="name">Geospatial Visualisations</a>
-                <p class="uk-article-meta"><time datetime="2019-06-04" itemprop="datePublished">Tir 04 Juni 2019</time> • <a href="http://margrethescode.github.io/category/visualisations.html">visualisations</a></p>
-</p>
-                <p class="uk-article-lead" itemprop="description">Theory about mapping data</p>
-                <section itemprop="articleBody"><style type="text/css">/*!
+</div>
+
+<div class="uk-width-medium-7-10">
+
+    <article class="uk-article">
+        <h1 class="uk-heading-large uk-article-title" itemprop="name">Geospatial Visualisations</h1>
+        <p class="uk-article-meta"><time datetime="2019-06-04" itemprop="datePublished">Tir 04 Juni 2019</time> in <a href="http://margrethescode.github.io/category/visualisations.html">visualisations</a></p>
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://margrethescode.github.io/geospatial_visualisations.html" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" taget="_blank" class="uk-button uk-visible-small"><i class="uk-icon-facebook-square"></i> Share</a>
+        <a href="https://twitter.com/intent/tweet?text=Geospatial%20Visualisations&url=http://margrethescode.github.io/geospatial_visualisations.html&via=MargretheB" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="uk-button uk-visible-small" target="_blank"><i class="uk-icon-twitter"></i> Tweet</a>
+        <a href="https://plus.google.com/share?url=http://margrethescode.github.io/geospatial_visualisations.html" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" class="uk-button uk-visible-small"><i class="uk-icon-google-plus-square"></i> Share</a>
+
+        <p class="uk-article-lead" itemprop="description">Theory about mapping data</p>
+        <section itemprop="articleBody"><style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1466,20 +1491,8 @@ height=100
 }
 </script>
 </section>
-                <a href="http://margrethescode.github.io/geospatial_visualisations.html#disqus_thread"></a>
-                <hr class="uk-article-divider">
-            </article>
-
-
-        <article class="uk-article" itemtype="http://schema.org/BlogPosting" itemscope="itemscope" itemprop="blogPost">
-                <a href="http://margrethescode.github.io/first-post.html" class="uk-article-title uk-link-muted" itemprop="name">First Post</a>
-                <p class="uk-article-meta"><time datetime="2019-06-04" itemprop="datePublished">Tir 04 Juni 2019</time> • <a href="http://margrethescode.github.io/category/posts.html">posts</a></p>
-</p>
-                <p class="uk-article-lead" itemprop="description">My first post, read it to find out</p>
-                <p>/*! * * IPython notebook * */ /* CSS font colors for translated ANSI escape sequences */ /* The color values are a mix of http://www.xcolors.net/dl/baskerville-ivorylight and http://www.xcolors.net/dl/euphrasia */ .ansi-black-fg { color: #3E424D; } .ansi-black-bg { background-color: #3E424D; } .ansi-black-intense-fg { color: #282C36; } .ansi-black-intense-bg { background-color: #282C36; } .ansi-red-fg { color: #E75C58; } .ansi-red-bg { background-color: #E75C58; } .ansi-red-intense-fg { color: #B22B31; } .ansi-red-intense-bg { background-color: #B22B31; } .ansi-green-fg { color: #00A250; } .ansi-green-bg { background-color: #00A250; } .ansi-green-intense-fg { color: #007427; } .ansi-green-intense-bg { background-color:...</p>
-                <a href="http://margrethescode.github.io/first-post.html">Read More</a>
-                <hr class="uk-article-divider">
-        </article>
+        <hr class="uk-article-divider">
+    </article>
 
 
 </div>
@@ -1497,7 +1510,7 @@ height=100
                 <ul class="uk-nav uk-nav-side">
                     <li class="uk-nav-header">Categories</li>
                     <li ><a href="http://margrethescode.github.io/category/posts.html">posts</a></li>
-                    <li ><a href="http://margrethescode.github.io/category/visualisations.html">visualisations</a></li>
+                    <li class="uk-active"><a href="http://margrethescode.github.io/category/visualisations.html">visualisations</a></li>
                     <li class="uk-nav-header">Pages</li>
                     
                     
@@ -1567,7 +1580,7 @@ height=100
         <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
             <li class="uk-nav-header">Categories</li>
             <li ><a href="http://margrethescode.github.io/category/posts.html">posts</a></li>
-            <li ><a href="http://margrethescode.github.io/category/visualisations.html">visualisations</a></li>
+            <li class="uk-active"><a href="http://margrethescode.github.io/category/visualisations.html">visualisations</a></li>
             <li class="uk-nav-header">Pages</li>        
                     
 
